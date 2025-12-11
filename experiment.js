@@ -189,8 +189,10 @@ const instructions = {
   pages: [
     `<div class="center">
        <h2>Instructions</h2>
-       <p><strong>In this experiment, we will ask you to put yourself in the position of a college basketball and/or chess team captain tasked with selecting male and female teammates.</strong></p>
-       <p>On each screen, you will see one image and two questions: 'How likely are you to choose this person for your college basketball team?' and 'How likely are you to choose this person for your college chess team?'. <strong>Please answer the questions based on your perception of the presented image.</strong></p>
+       <p><strong>In this experiment, we will ask you to put yourself in the position of a college basketball team captain and college chess team captain tasked with selecting new team members. There are male and female teams.</strong></p>
+       <p>On each screen, you will see one image and two questions.</p> 
+       <p>'How likely are you to choose this person for your college basketball team?' and 'How likely are you to choose this person for your college chess team?'.</p> 
+       </p><strong>Please answer the questions based on your perception of the presented image.</strong></p>
        <p>Use the 1–7 scale for each question. <strong>The scale is pre-set to 4 by default. However, you must still click or tap on your chosen response — including 4 — to record your answer</strong>.</p>
        <p>Both answers are required.</p>
      </div>`
@@ -203,10 +205,10 @@ const instructions = {
 
 function blockIntroHTML(label) {
   const isMale = (label === 'Male');
-  const heading = isMale ? 'Male Candidates' : 'Female Candidates';
+  const heading = isMale ? 'Male candidates for the male basketball and male chess teams' : 'Female candidates for the female basketball and female chess teams';
   const line = isMale
-    ? 'Please view and answer the questions about the following male candidates'
-    : 'Please view and answer the questions about the following female candidates';
+    ? 'Please view and answer the questions about the following male candidates for the male basketball and male chess teams'
+    : 'Please view and answer the questions about the following female candidates for the female basketball and female chess teams';
   return `<div class="center">
             <h2>${heading}</h2>
             <p>${line}.</p>
