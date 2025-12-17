@@ -511,7 +511,7 @@ const thankYou = {
        <br>Please click on the link below to be redirected to CloudResearch and then close this window.</strong></p>
 
        <p style="margin-top:12px;">
-         <a href="https://connect.cloudresearch.com/participant/project/FF4E356E38/complete"
+         <a href="https://connect.cloudresearch.com/participant/project/5387D47AC4/complete"
             target="_blank" rel="noopener noreferrer"
             style="display:inline-block;padding:10px 16px;text-decoration:none;border-radius:8px;border:1px solid #2b6cb0;">
             Continue to CloudResearch
